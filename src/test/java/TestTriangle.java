@@ -1,15 +1,14 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.platform.commons.annotation.Testable;
 
 import java.util.Arrays;
 
-public class TestTriangle {
+public class TestTriangle  {
 
     @Test
     public void createRange() {
-        int range[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] range = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         String rangeAsString = Arrays.toString(range).replaceAll(" ", "");
         System.out.println(rangeAsString);
@@ -18,7 +17,7 @@ public class TestTriangle {
     }
 
 
-    double verticels[] = {1, 2, 3, 4, 5, 6};
+    double[] verticels = {1, 2, 3, 4, 5, 6};
 
     @Test
     void testTriangle() {
